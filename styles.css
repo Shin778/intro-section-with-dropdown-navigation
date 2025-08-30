@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+body {
+  background-color: #fafafaff;
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+}
+
+.desktop-nav-container {
+  display: none;
+}
+
+.mobile-nav-container {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-menu-btn {
+  display: flex;
+  z-index: 999;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 60%;
+  background-color: white;
+  padding: 1rem 2rem;
+}
+
+.active-menu {
+  display: flex;
+}
+
+.mobile-links {
+  display: flex;
+  padding-right: 40px;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.mobile-links li {
+  display: flex;
+  color: #696969ff;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.mobile-links li p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mobile-sub {
+  display: none;
+  flex-direction: column;
+}
+
+.active-submenu {
+  display: flex;
+}
+
+.sub-link {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+
+.login-btn {
+  padding: 1rem 2rem;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 15px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.register-btn {
+  padding: 1rem 2rem;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.main-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-mobile {
+  padding-top: 30px;
+  width: 100%;
+}
+
+.img-desktop {
+  display: none;
+}
+
+.main-heading {
+  text-align: center;
+}
+
+.main-content {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.8;
+  max-width: 375px;
+}
+
+.logoes {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  justify-content: space-between;
+}
+
+.primary-btn {
+  margin-bottom: 30px;
+  display: flex;
+  background-color: #141414ff;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  color: #fafafaff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: #fafafaff;
+  border: 1px solid #141414ff;
+  color: #141414ff;
+  font-weight: 700;
+}
+
+@media (min-width: 1150px) {
+  .desktop-nav-container {
+    display: flex;
+    padding-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-right {
+    padding: 20px;
+  }
+
+  .logo {
+    padding: 20px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .mobile-nav-container {
+    display: none;
+  }
+
+  .nav-links {
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    display: flex;
+    margin-left: 4rem;
+    list-style: none;
+    gap: 8rem;
+  }
+
+  .nav-links li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .sub-menu {
+    font-size: 20px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    gap: 1rem;
+    box-shadow: 0px 0px 1px 3px rgba(211, 211, 211, 0.04);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .one {
+    bottom: 500px;
+  }
+
+  .two {
+    bottom: 580px;
+  }
+
+  .sub-menu .sub-link {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    gap: 0.5rem;
+  }
+
+  .active .arrow {
+    transform: rotate(180deg);
+    transition: 0.2s;
+  }
+
+  .active-menu {
+    display: flex;
+  }
+
+  main {
+    display: flex;
+    height: calc(90vh);
+    justify-content: center;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-heading {
+    max-width: 700px;
+    font-size: 6rem;
+  }
+
+  .main-content {
+    font-size: 25px;
+    max-width: 700px;
+
+    line-height: 1.8;
+    color: #696969ff;
+  }
+
+  .logoes {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+
+  .img-desktop {
+    display: block;
+    max-width: 700px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
