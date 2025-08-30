@@ -29,6 +29,9 @@ Built with **HTML, CSS, and JavaScript**, optimized for both desktop and mobile 
 
 ![Mobile Menu Expanded](./screenshots/mobile-menu-expanded.png)
 
+## 🚀 Demo
+🔗 [Live Demo on Vercel](https://intro-section-with-dropdown-navigat-steel.vercel.app/)  
+
 ## 🛠️ Built With
 
 - **HTML5**
